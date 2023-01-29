@@ -2,9 +2,9 @@ import React from 'react'
 import { Card, CardBody, CardFooter, Image, Stack, Text, Heading, Button } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
-function ProposalCard({ id, causeTitle, description, imageURL }) {
-  console.log("!!!!!!", imageURL)
 
+function ProposalCard({ id, causeTitle, description, imageURL }) {
+  const href = '/VoteInfo/' + id;
   return (
     <Card
       direction={{ base: 'column', sm: 'row' }}
@@ -29,7 +29,7 @@ function ProposalCard({ id, causeTitle, description, imageURL }) {
 
         <CardFooter>
           <Button variant='solid' colorScheme='blue'>
-            <a href={`/VoteInfo/{id}`}>
+            <a href={href}>
               Vote
             </a>
           </Button>
