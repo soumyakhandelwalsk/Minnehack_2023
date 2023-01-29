@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid'
 import Image from 'mui-image'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography';
+import { useParams } from 'react-router-dom';
 
 const theme = createTheme({
   palette: {
@@ -27,6 +28,9 @@ const theme = createTheme({
 });
 
 function Main() {
+  const { id } = useParams();
+  console.log("!!!!!!", id)
+
   const comments_card = (
     <React.Fragment>
       <CardContent>
@@ -63,23 +67,23 @@ function Main() {
   );
 
   const para_text = (<p style={{ textAlign: "left" }}>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-  luctus ut est sed faucibus. Duis bibendum ac ex vehicula laoreet.
-  Suspendisse congue vulputate lobortis. Pellentesque at interdum
-  tortor. Quisque arcu quam, malesuada vel mauris et, posuere
-  sagittis ipsum. Aliquam ultricies a ligula nec faucibus. In elit
-  metus, efficitur lobortis nisi quis, molestie porttitor metus.
-  Pellentesque et neque risus. Aliquam vulputate, mauris vitae
-  tincidunt interdum, mauris mi vehicula urna, nec feugiat quam
-  lectus vitae ex.{" "}
-</p>);
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    luctus ut est sed faucibus. Duis bibendum ac ex vehicula laoreet.
+    Suspendisse congue vulputate lobortis. Pellentesque at interdum
+    tortor. Quisque arcu quam, malesuada vel mauris et, posuere
+    sagittis ipsum. Aliquam ultricies a ligula nec faucibus. In elit
+    metus, efficitur lobortis nisi quis, molestie porttitor metus.
+    Pellentesque et neque risus. Aliquam vulputate, mauris vitae
+    tincidunt interdum, mauris mi vehicula urna, nec feugiat quam
+    lectus vitae ex.{" "}
+  </p>);
 
   const vote_buttons = (
-  <ButtonGroup variant="contained" aria-label="outlined primary button group">
-  <Button color="secondary">Vote For</Button>
-  <br></br>
-  <Button color="primary">Vote Against</Button>
-  </ButtonGroup>);
+    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+      <Button color="secondary">Vote For</Button>
+      <br></br>
+      <Button color="primary">Vote Against</Button>
+    </ButtonGroup>);
   return (
     // <div>
     //   <Button variant="contained">Hello World</Button>
@@ -87,7 +91,7 @@ function Main() {
     <ThemeProvider theme={theme}>
       <Container maxWidth="sm">
         <h1>Save the Greendale Park</h1>
-        <Image src="images/greendale-park.jpg" alt="picture of a park"/>
+        <Image src="images/greendale-park.jpg" alt="picture of a park" />
         <Grid>{para_text}</Grid>
         <Card variant="outlined">{comments_card}</Card>
         <Paper><h1>Vote:</h1>{vote_buttons}</Paper>
