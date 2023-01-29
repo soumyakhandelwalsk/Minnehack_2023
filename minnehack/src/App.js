@@ -12,12 +12,11 @@ import { BrowserRouter, Route, Switch, Redirect, Routes } from "react-router-dom
 function App() {
   return (
     <BrowserRouter>
-      <Home />
       <Routes>
-        <Route path='/home' component={<Home />} />
-        <Route path='/Government' component={<Government />} />
-        <Route path='/Community' component={<Community />} />
-        <Route path='/Proposal' component={<Proposal />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/Government' element={<Government />} />
+        <Route path='/Community' element={<Community />} />
+        <Route path='/Proposal' element={<Proposal />} />
       </Routes>
     </BrowserRouter>
   );
