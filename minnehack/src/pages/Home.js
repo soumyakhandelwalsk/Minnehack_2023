@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navbar from "../components/Navbar.js";
+import backgroundImage from "../images/greendale-park.jpg";
 
 import landingImg from "../images/landingPage.png";
 
@@ -18,7 +19,8 @@ export default function Home() {
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage: "url('../images/landingPage.png')",
+              backgroundImage:
+                "url('https://img.freepik.com/free-vector/illustration-avatar-social-network-concept_53876-37162.jpg?w=1060&t=st=1675013869~exp=1675014469~hmac=5387f08cdde6efe7d625d489bdb3bec37106ef1982a2c281f535cc09cbc5aa33')",
             }}
           >
             <span
