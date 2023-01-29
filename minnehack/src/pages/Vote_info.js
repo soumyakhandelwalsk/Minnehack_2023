@@ -42,34 +42,34 @@ function VoteInfo() {
       imageURL: "https://images.unsplash.com/photo-1572670014853-1d3a3f22b40f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
     },
     5: {
-      causeTitle: "Cause5",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      imageURL: "",
+      causeTitle: "Change the library hours to close later in the evening.",
+      description: "Current public library hours are from 10am to 3pm on weekdays. This means that no students or working people have a proper time to use its services.",
+      imageURL: "https://images.unsplash.com/photo-1618707663064-2a2a2aa8f118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
-    11: {
+    12: {
       causeTitle: "Drain Lake Froghorn to make way for community development project.",
       description: "Divert the lake's water sources to nearby Lake Grenjy so the eyesore can finally be cleaned and drained. Will be replaced by community rec center.",
-      imageURL: "../images/greendale-park.jpg",
+      imageURL: "https://images.unsplash.com/photo-1558371274-c34e2d371073?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
     },
     22: {
-      causeTitle: "Cause2",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      imageURL: "",
+      causeTitle: "Improving recycling program ",
+      description: "Implementing a recycling program in order to reduce the amount of waste in landfills and promote environmental sustainability in Minneapolis, Minnesota",
+      imageURL: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjeWNsaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
     },
     32: {
-      causeTitle: "Casue3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      imageURL: "",
+      causeTitle: "Afforable Housing Programs",
+      description: "Developing affordable housing programs to address the issue of homelessness and lack of affordable housing for our local community in St.Paul, Minnesota",
+      imageURL: "https://images.unsplash.com/photo-1513880989635-6eb491ce7f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG91c2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
     },
     42: {
-      causeTitle: "Cause4",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      imageURL: "",
+      causeTitle: "Unblocking public transportation",
+      description: "Increasing funding for public transportation to improve accessibility and reduce traffic congestion to build new lightrail routes, bus stops, and roads in the state of Minnesota",
+      imageURL: "https://media.istockphoto.com/id/1395217190/photo/a-country-road-evening-blur-background.jpg?b=1&s=170667a&w=0&k=20&c=1Zzf4hWnO9NZAMpT74Zv6VxWjZkioj_srKuDH61xjoY=",
     },
     52: {
-      causeTitle: "Cause5",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      imageURL: "",
+      causeTitle: "Implement additional community gardens",
+      description: "Developing community gardens and urban agriculture projects to promote healthy eating and improve access to fresh fruits and vegetables for low-income residents",
+      imageURL: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJlY3ljbGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
     }
   };
 

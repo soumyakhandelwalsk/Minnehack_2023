@@ -12,10 +12,10 @@ import Typography from '@mui/material/Typography';
 
 function ProposalInfo({id, causeTitle, longDescription, imageURL, comments}) {
   const vote_buttons = (
-    <ButtonGroup variant="contained" aria-label="outlined primary button group">
-      <Button color="secondary">Vote For</Button>
+    <ButtonGroup variant="contained" aria-label="outlined primary button group" sx={{ mx: 1 }}>
+      <Button color="secondary" href="../signIn">Vote For</Button>
       <br></br>
-      <Button color="primary">Vote Against</Button>
+      <Button color="primary" href="../signIn">Vote Against</Button>
     </ButtonGroup>);
 
   const comments_card = (
@@ -54,9 +54,9 @@ function ProposalInfo({id, causeTitle, longDescription, imageURL, comments}) {
   );
 
   return (
-      <Container>
+      <Container sx={{ my: 2 }}>
         <Typography variant="h4" component="div">{causeTitle}</Typography>
-        <Grid container spacing={5}>
+        <Grid container spacing={2} sx={{ my: 1.2 }}>
           <Grid item xs={8}>
             <Image src={imageURL} alt="Cause Image" />
             <Grid>
@@ -67,9 +67,8 @@ function ProposalInfo({id, causeTitle, longDescription, imageURL, comments}) {
             <Card variant="outlined">{comments_card}</Card>
           </Grid>
         </Grid>
-        <br></br>
-        <Grid>
-          <Typography variant="h4" component="div">Vote:</Typography>
+        <Grid sx={{ my: 10 }}>
+          <Typography variant="h4" component="span">Vote:</Typography>
           {vote_buttons}
         </Grid>
       </Container>
