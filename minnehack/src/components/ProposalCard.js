@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function ProposalCard({ id, causeTitle, description, imageURL }) {
-  const href = '/VoteInfo/'+id;
+  const href = '/VoteInfo/' + id;
   return (
     <Card
       direction={{ base: 'column', sm: 'row' }}
