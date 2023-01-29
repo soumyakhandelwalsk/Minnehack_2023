@@ -39,10 +39,11 @@ function Community() {
 
     {
       id: 5,
-      causeTitle: "Cause5",
+      causeTitle: "Change the library hours to close later in the evening.",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      imageURL: "",
+        "Current public library hours are from 10am to 3pm on weekdays. This means that no students or working people have a proper time to use its services.",
+      imageURL:
+        "https://images.unsplash.com/photo-1618707663064-2a2a2aa8f118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
   ];
 
