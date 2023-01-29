@@ -3,6 +3,40 @@ import Navbar from "../components/Navbar.js";
 import ProposalCard from '../components/ProposalCard.js';
 
 function Government() {
+
+  let proposals = [
+    {
+      id: 1,
+      causeTitle: "Cause1",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      imageURL: "",
+    },
+    {
+      id: 2,
+      causeTitle: "Cause2",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      imageURL: "",
+    },
+    {
+      id: 3,
+      causeTitle: "Casue3",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      imageURL: "",
+    },
+    {
+      id: 4,
+      causeTitle: "Cause4",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      imageURL: "",
+    },
+    {
+      id: 5,
+      causeTitle: "Cause5",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      imageURL: "",
+    }
+  ]
+
   return (
     <>
       <Navbar />
@@ -10,9 +44,16 @@ function Government() {
         <div className="relative pt-16 pb-4 flex content-center items-center justify-center">
         </div>
         <div className="container mx-auto">
-          <ProposalCard />
-          <ProposalCard />
-          <ProposalCard />
+          {
+            proposals.map(proposal => (
+              <ProposalCard
+                key={proposal.id}
+                causeTitle={proposal.causeTitle}
+                description={proposal.description}
+                imageURL={proposal.imageURL}
+              />
+            ))
+          }
         </div>
       </main>
     </>
