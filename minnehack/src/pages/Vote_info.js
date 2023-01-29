@@ -55,14 +55,6 @@ function VoteInfo() {
       imageURL:
         "https://images.unsplash.com/photo-1618707663064-2a2a2aa8f118?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
     },
-    12: {
-      causeTitle:
-        "Drain Lake Froghorn to make way for community development project.",
-      description:
-        "Divert the lake's water sources to nearby Lake Grenjy so the eyesore can finally be cleaned and drained. Will be replaced by community rec center.",
-      imageURL:
-        "https://images.unsplash.com/photo-1558371274-c34e2d371073?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-    },
     22: {
       causeTitle: "Improving recycling program ",
       description:
