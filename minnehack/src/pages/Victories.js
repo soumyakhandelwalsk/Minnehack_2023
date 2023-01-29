@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from "../components/Navbar.js";
 
-function Community() {
+function Victories() {
   return (
     <>
       <Navbar transparent />
@@ -14,10 +14,10 @@ function Community() {
           }}>
           <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
         </div>
-        <div>Community</div>
+        <div>Victories</div>
       </main>
     </>
   )
 }
 
-export default Community
+export default Victories
