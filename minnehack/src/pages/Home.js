@@ -1,9 +1,6 @@
 import React from "react";
 
 import Navbar from "../components/Navbar.js";
-import backgroundImage from "../images/greendale-park.jpg";
-
-import landingImg from "../images/landingPage.png";
 
 export default function Home() {
   return (

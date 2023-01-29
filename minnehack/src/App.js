@@ -7,14 +7,11 @@ import Community from "./pages/Community";
 import Proposal from "./pages/Propose";
 import Victories from "./pages/Victories";
 import Vote_info from "./pages/Vote_info";
-import {
-  BrowserRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
+import Result_info from "./pages/Result_info";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 /* chakra UI stuff */
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from "@chakra-ui/react";
 
 function App() {
   return (
@@ -25,12 +22,12 @@ function App() {
           <Route path="/government" element={<Government />} />
           <Route path="/community" element={<Community />} />
           <Route path="/proposal" element={<Proposal />} />
-          <Route path="/victories" element={<Victories />} />
+          <Route path="/pastVotes" element={<Victories />} />
           <Route path="/VoteInfo/:id" element={<Vote_info />} />
+          <Route path="/ResultInfo/:id" element={<Result_info />} />
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
-
   );
 }
 
