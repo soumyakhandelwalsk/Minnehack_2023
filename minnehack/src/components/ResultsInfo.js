@@ -1,21 +1,39 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Container from '@mui/system/Container';
 import Grid from '@mui/material/Grid'
 import Image from 'mui-image'
+import Paper from '@mui/material/Paper';
+import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
-function ProposalInfo({id, causeTitle, longDescription, imageURL, comments}) {
+const Item1 = styled(Paper)(({ theme }) => ({
+  backgroundColor: "red",
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: 'white',
+}));
+
+const Item2 = styled(Paper)(({ theme }) => ({
+  backgroundColor: "green",
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: 'white',
+}));
+
+function ResultInfoPage({id, causeTitle, longDescription, imageURL, comments}) {
   const vote_buttons = (
-    <ButtonGroup variant="contained" aria-label="outlined primary button group" sx={{ mx: 1 }}>
-      <Button color="secondary" href="../signIn">Vote For</Button>
-      <br></br>
-      <Button color="primary" href="../signIn">Vote Against</Button>
-    </ButtonGroup>);
+    <Grid container spacing={2}>
+      <Grid item xs={1.44} color="green">
+        <Item2 >For: 12</Item2>
+      </Grid>
+      <Grid item xs={10.56} color="red">
+        <Item1 color="red">Against: 88</Item1>
+      </Grid>
+    </Grid>);
 
   const comments_card = (
     <React.Fragment>
@@ -67,11 +85,11 @@ function ProposalInfo({id, causeTitle, longDescription, imageURL, comments}) {
           </Grid>
         </Grid>
         <Grid sx={{ my: 10 }}>
-          <Typography variant="h4" component="span">Vote:</Typography>
+          <Typography variant="h4" component="span">Vote Result:</Typography>
           {vote_buttons}
         </Grid>
       </Container>
   );
 }
 
-export default ProposalInfo;
+export default ResultInfoPage;

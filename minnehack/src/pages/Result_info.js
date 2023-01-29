@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar.js";
-import ProposalInfo from "../components/ProposalInfo.js";
+import ResultInfoPage from "../components/ResultsInfo.js";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useParams } from "react-router-dom";
 
@@ -36,7 +36,7 @@ function ResultInfo() {
       <Navbar />
       <div className="container mx-auto">
         {
-          <ProposalInfo
+          <ResultInfoPage
             key={current_proposal.id}
             causeTitle={current_proposal.causeTitle}
             longDescription={current_proposal.description}
