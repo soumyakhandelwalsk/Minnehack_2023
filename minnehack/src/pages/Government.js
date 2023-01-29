@@ -6,31 +6,31 @@ function Government() {
 
   let proposals = [
     {
-      id: 1,
+      id: 11,
       causeTitle: "Drain Lake Froghorn to make way for community development project.",
       description: "Divert the lake's water sources to nearby Lake Grenjy so the eyesore can finally be cleaned and drained. Will be replaced by community rec center.",
-      imageURL: "",
+      imageURL: "../images/greendale-park.jpg",
     },
     {
-      id: 2,
+      id: 22,
       causeTitle: "Cause2",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       imageURL: "",
     },
     {
-      id: 3,
+      id: 32,
       causeTitle: "Casue3",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       imageURL: "",
     },
     {
-      id: 4,
+      id: 42,
       causeTitle: "Cause4",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       imageURL: "",
     },
     {
-      id: 5,
+      id: 52,
       causeTitle: "Cause5",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       imageURL: "",
@@ -48,6 +48,7 @@ function Government() {
             proposals.map(proposal => (
               <ProposalCard
                 key={proposal.id}
+                id={proposal.id}
                 causeTitle={proposal.causeTitle}
                 description={proposal.description}
                 imageURL={proposal.imageURL}
