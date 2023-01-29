@@ -3,9 +3,8 @@ import { Card, CardBody, CardFooter, Image, Stack, Text, Heading, Button } from 
 import { Link } from 'react-router-dom';
 
 
-function ProposalCard({ id, causeTitle, description, imageUrl }) {
-
-
+function ProposalCard({ id, causeTitle, description, imageURL }) {
+  const href = '/VoteInfo/'+id;
   return (
     <Card
       direction={{ base: 'column', sm: 'row' }}
@@ -30,7 +29,7 @@ function ProposalCard({ id, causeTitle, description, imageUrl }) {
 
         <CardFooter>
           <Button variant='solid' colorScheme='blue'>
-            <a href={`/VoteInfo/{id}`}>
+            <a href={href}>
               Vote
             </a>
           </Button>

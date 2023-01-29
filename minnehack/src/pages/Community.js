@@ -48,6 +48,7 @@ function Community() {
             proposals.map(proposal => (
               <ProposalCard
                 key={proposal.id}
+                id={proposal.id}
                 causeTitle={proposal.causeTitle}
                 description={proposal.description}
                 imageURL={proposal.imageURL}
