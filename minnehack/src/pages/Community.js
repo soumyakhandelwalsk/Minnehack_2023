@@ -12,22 +12,23 @@ function Community() {
     },
     {
       id: 2,
-      causeTitle: "Increase federal funding for childhood cancer",
-      description: " Parents shouldn't have financial hardship and deliver bad news to my daughter, neighbors, and friends. Let's raise the federal funding for childhood cancer research from 4% to 8%",
+      causeTitle: "Save the Greendale Park",
+      description: "We should not need to remove a pre-existing park when there's so much undeveloped land in the area that could be used for projects instead.",
       imageURL: "",
     },
     {
       id: 3,
-      causeTitle: "Casue3",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      causeTitle: "Increase funding at local hospitals for childhood cancer",
+      description: "Parents shouldn't have financial hardship and deliver bad news to my daughter, neighbors, and friends. Let's raise the local funding for childhood cancer research from 4% to 8%",
       imageURL: "",
     },
     {
       id: 4,
-      causeTitle: "Cause4",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      causeTitle: "Stop sign at the intersection of Franklin and 8th.",
+      description: "Too many almost accidents have occured at this intersection. There needs to be a proper system in place.",
       imageURL: "",
     },
+    
     {
       id: 5,
       causeTitle: "Cause5",

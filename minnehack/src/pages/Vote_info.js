@@ -1,103 +1,79 @@
-import * as React from 'react';
-
-//import Button from '@mui/material/Button';
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
-import Card from '@mui/material/Card'
+import React from 'react'
+import Navbar from "../components/Navbar.js";
+import ProposalInfo from '../components/ProposalInfo.js';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Container from '@mui/system/Container';
-import Grid from '@mui/material/Grid'
-import Image from 'mui-image'
-import Paper from '@mui/material/Paper'
-import Typography from '@mui/material/Typography';
 import { useParams } from 'react-router-dom';
+
 
 const theme = createTheme({
   palette: {
     primary: {
-      // Purple and green play nicely together.
+      // red
       main: '#8e1600',
     },
     secondary: {
-      // This is green.A700 as hex.
+      // green
       main: '#0c3823',
     },
   },
 });
 
-function Main() {
-  const { id } = useParams();
+function VoteInfo() {
+  // const { id } = useParams();
+  const id = 2;
   console.log("!!!!!!", id)
+  let proposals = [
+    {
+      id: 1,
+      causeTitle: "Allow UMN Class of 2023 to Walk at Graduation",
+      description: "As students of the 2023 graduating class, we should be outraged by administrators' decision on the commencement ceremonies",
+      imageURL: "https://images.unsplash.com/photo-1607013407627-6ee814329547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80",
+    },
+    {
+      id: 2,
+      causeTitle: "Save the Greendale Park",
+      description: "We should not need to remove a pre-existing park when there's so much undeveloped land in the area that could be used for projects instead.",
+      imageURL: "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    },
+    {
+      id: 3,
+      causeTitle: "Increase funding at local hospitals for childhood cancer",
+      description: "Parents shouldn't have financial hardship and deliver bad news to my daughter, neighbors, and friends. Let's raise the local funding for childhood cancer research from 4% to 8%",
+      imageURL: "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+    },
+    {
+      id: 4,
+      causeTitle: "Stop sign at the intersection of Franklin and 8th.",
+      description: "Too many almost accidents have occured at this intersection. There needs to be a proper system in place.",
+      imageURL: "",
+    },
+    
+    {
+      id: 5,
+      causeTitle: "Cause5",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      imageURL: "",
+    }
+  ]
 
-  const comments_card = (
-    <React.Fragment>
-      <CardContent>
-        <Typography variant="h4" component="div">
-          Comments
-        </Typography>
-        <Typography variant="h6" component="div" color="green">
-          For petition
-        </Typography>
-        <Typography variant="body2">
-          I support this initiative since this is where my grandkids play after school each day.
-          I cannot believe the local legislation wants to tear this down for yet another 'luxury' building.
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Loren Green, Greendale, Jan 28 2023
-        </Typography>
-      </CardContent>
-      <CardContent>
-        <Typography variant="h6" component="div" color="red">
-          Against petition
-        </Typography>
-        <Typography variant="body2">
-          We already have 3 other parks in walking distance (3 mile radius). Well maintained parks are more important
-          than having one park for each family. This park is a dump and should be sold to property developers.
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Jim Kirk, Greendale, Jan 28 2023
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Read more comments</Button>
-      </CardActions>
-    </React.Fragment>
-  );
+  const current_proposal = proposals[id];
 
-  const para_text = (<p style={{ textAlign: "left" }}>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-    luctus ut est sed faucibus. Duis bibendum ac ex vehicula laoreet.
-    Suspendisse congue vulputate lobortis. Pellentesque at interdum
-    tortor. Quisque arcu quam, malesuada vel mauris et, posuere
-    sagittis ipsum. Aliquam ultricies a ligula nec faucibus. In elit
-    metus, efficitur lobortis nisi quis, molestie porttitor metus.
-    Pellentesque et neque risus. Aliquam vulputate, mauris vitae
-    tincidunt interdum, mauris mi vehicula urna, nec feugiat quam
-    lectus vitae ex.{" "}
-  </p>);
-
-  const vote_buttons = (
-    <ButtonGroup variant="contained" aria-label="outlined primary button group">
-      <Button color="secondary">Vote For</Button>
-      <br></br>
-      <Button color="primary">Vote Against</Button>
-    </ButtonGroup>);
   return (
-    // <div>
-    //   <Button variant="contained">Hello World</Button>
-    // </div>
     <ThemeProvider theme={theme}>
-      <Container maxWidth="sm">
-        <h1>Save the Greendale Park</h1>
-        <Image src="images/greendale-park.jpg" alt="picture of a park" />
-        <Grid>{para_text}</Grid>
-        <Card variant="outlined">{comments_card}</Card>
-        <Paper><h1>Vote:</h1>{vote_buttons}</Paper>
-      </Container>
+      <Navbar />
+      <div className="container mx-auto">
+          {
+            <ProposalInfo
+                key={current_proposal.id}
+                causeTitle={current_proposal.causeTitle}
+                longDescription={current_proposal.description}
+                imageURL={current_proposal.imageURL}
+                comments={null}
+              />
+          }
+        </div>
     </ThemeProvider>
-  );
+  )
 }
 
-export default Main;
+export default VoteInfo;

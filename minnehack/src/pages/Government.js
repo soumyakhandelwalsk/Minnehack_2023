@@ -7,8 +7,8 @@ function Government() {
   let proposals = [
     {
       id: 1,
-      causeTitle: "Cause1",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      causeTitle: "Drain Lake Froghorn to make way for community development project.",
+      description: "Divert the lake's water sources to nearby Lake Grenjy so the eyesore can finally be cleaned and drained. Will be replaced by community rec center.",
       imageURL: "",
     },
     {
