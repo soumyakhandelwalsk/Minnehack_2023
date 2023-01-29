@@ -8,7 +8,7 @@ import landingImg from "../images/landingPage.png";
 export default function Home() {
   return (
     <>
-      <Navbar transparent />
+      <Navbar />
       <main>
         <div
           className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -36,9 +36,8 @@ export default function Home() {
                     The CHANGE starts with YOU
                   </h1>
                   <p className="mt-4 text-lg text-gray-300">
-                    This is a simple example of a Landing Page you can build
-                    using Tailwind Starter Kit. It features multiple CSS
-                    components based on the Tailwindcss design system.
+                    VoteOn, a platform to give the citizens the power to bring
+                    about change in their localities.
                   </p>
                 </div>
               </div>
@@ -107,10 +106,13 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                       <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Verified Company</h6>
+                    <h6 className="text-xl font-semibold">
+                      Platform for discussion
+                    </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Write a few lines about each one. A paragraph describing a
-                      feature will be enough. Keep you user engaged!
+                      Have meaninful civic discussions before voting on
+                      policies. See the strongest arguments from both sides of
+                      view to make a much informed decision.
                     </p>
                   </div>
                 </div>
