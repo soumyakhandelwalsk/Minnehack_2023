@@ -2,28 +2,36 @@ import React from "react";
 
 import Navbar from "../components/Navbar.js";
 
+import landingImg from "../images/landingPage.png";
 
 export default function Home() {
   return (
     <>
       <Navbar transparent />
       <main>
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
+        <div
+          className="relative pt-16 pb-32 flex content-center items-center justify-center"
           style={{
-            minHeight: "75vh"
-          }}>
-          <div className="absolute top-0 w-full h-full bg-center bg-cover"
+            minHeight: "75vh",
+          }}
+        >
+          <div
+            className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              backgroundImage: "url('')"
-            }}>
-            <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+              backgroundImage: "url('../images/landingPage.png')",
+            }}
+          >
+            <span
+              id="blackOverlay"
+              className="w-full h-full absolute opacity-75 bg-black"
+            ></span>
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
                   <h1 className="text-white font-semibold text-5xl">
-                    Your story starts with us.
+                    The CHANGE starts with YOU
                   </h1>
                   <p className="mt-4 text-lg text-gray-300">
                     This is a simple example of a Landing Page you can build
@@ -32,7 +40,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
           <div
@@ -65,9 +72,12 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <i className="fas fa-award"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">Awarded Agency</h6>
+                    <h6 className="text-xl font-semibold">
+                      Government Policies
+                    </h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.
+                      Vote and give your views on policies the government is
+                      planning to implement.
                     </p>
                   </div>
                 </div>
@@ -79,11 +89,11 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                       <i className="fas fa-retweet"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">
-                      Free Revisions
-                    </h6>
+                    <h6 className="text-xl font-semibold">Propose Changes</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.
+                      See anything around that needs government attention? Start
+                      a proposal, get people's attention and get it escalated to
+                      your elected officials.
                     </p>
                   </div>
                 </div>
@@ -95,11 +105,10 @@ export default function Home() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
                       <i className="fas fa-fingerprint"></i>
                     </div>
-                    <h6 className="text-xl font-semibold">
-                      Verified Company
-                    </h6>
+                    <h6 className="text-xl font-semibold">Verified Company</h6>
                     <p className="mt-2 mb-4 text-gray-600">
-                      Write a few lines about each one. A paragraph describing a feature will be enough. Keep you user engaged!
+                      Write a few lines about each one. A paragraph describing a
+                      feature will be enough. Keep you user engaged!
                     </p>
                   </div>
                 </div>
