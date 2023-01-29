@@ -46,7 +46,7 @@ function VoteInfo() {
       description: "Too many almost accidents have occured at this intersection. There needs to be a proper system in place.",
       imageURL: "https://images.unsplash.com/photo-1572670014853-1d3a3f22b40f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
     },
-    
+
     {
       id: 5,
       causeTitle: "Cause5",
@@ -61,16 +61,16 @@ function VoteInfo() {
     <ThemeProvider theme={theme}>
       <Navbar />
       <div className="container mx-auto">
-          {
-            <ProposalInfo
-                key={current_proposal.id}
-                causeTitle={current_proposal.causeTitle}
-                longDescription={current_proposal.description}
-                imageURL={current_proposal.imageURL}
-                comments={null}
-              />
-          }
-        </div>
+        {
+          <ProposalInfo
+            key={current_proposal.id}
+            causeTitle={current_proposal.causeTitle}
+            longDescription={current_proposal.description}
+            imageURL={current_proposal.imageURL}
+            comments={null}
+          />
+        }
+      </div>
     </ThemeProvider>
   )
 }
