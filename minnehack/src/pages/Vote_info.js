@@ -19,8 +19,7 @@ const theme = createTheme({
 });
 
 function VoteInfo() {
-  // const { id } = useParams();
-  const id = 2;
+  const { id } = useParams();
   console.log("!!!!!!", id)
   let proposals = [
     {
@@ -45,7 +44,7 @@ function VoteInfo() {
       id: 4,
       causeTitle: "Stop sign at the intersection of Franklin and 8th.",
       description: "Too many almost accidents have occured at this intersection. There needs to be a proper system in place.",
-      imageURL: "",
+      imageURL: "https://images.unsplash.com/photo-1572670014853-1d3a3f22b40f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
     },
     
     {

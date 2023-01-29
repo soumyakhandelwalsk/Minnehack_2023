@@ -54,12 +54,20 @@ function ProposalInfo({id, causeTitle, longDescription, imageURL, comments}) {
   );
 
   return (
-      <Container maxWidth="sm">
+      <Container>
         <Typography variant="h4" component="div">{causeTitle}</Typography>
-        <Image src={imageURL} alt="Cause Image" />
-        <Grid>
-          <Typography>{longDescription}</Typography></Grid>
-        <Card variant="outlined">{comments_card}</Card>
+        <Grid container spacing={5}>
+          <Grid item xs={8}>
+            <Image src={imageURL} alt="Cause Image" />
+            <Grid>
+              <Typography>{longDescription}</Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={4}>
+            <Card variant="outlined">{comments_card}</Card>
+          </Grid>
+        </Grid>
+        <br></br>
         <Grid>
           <Typography variant="h4" component="div">Vote:</Typography>
           {vote_buttons}
