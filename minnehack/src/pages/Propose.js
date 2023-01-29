@@ -12,25 +12,24 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+const theme = createTheme({
+  palette: {
+    primary: {
+      // Purple and green play nicely together.
+      main: '#8e1600',
+    },
+    secondary: {
+      // This is green.A700 as hex.
+      main: '#0c3823',
+    },
+  },
+});
+
 function Propose() {
   return (
-    <>
-      {/* <Navbar transparent /> */}
-      {/* <main>
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center"></div>
-        <div
-          className="absolute top-0 w-full h-full bg-center bg-cover"
-          style={{
-            backgroundImage: "url('')",
-          }}
-        >
-          <span
-            id="blackOverlay"
-            className="w-full h-full absolute opacity-75 bg-black"
-          ></span>
-        </div>
-        <div>Proposal</div>
-      </main> */}
+    <ThemeProvider theme={theme}>
+      <Navbar />
       <Paper>
         <Box sx={{ width: "100%", maxWidth: 500 }}>
           <Typography variant="h4" gutterBottom>
@@ -77,7 +76,7 @@ function Propose() {
           </div>
         </Box>
       </Paper>
-    </>
+    </ThemeProvider>
   );
 }
 
