@@ -14,17 +14,21 @@ import {
   Routes,
 } from "react-router-dom";
 
+import { ChakraProvider } from '@chakra-ui/react'
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Government" element={<Government />} />
-        <Route path="/Community" element={<Community />} />
-        <Route path="/Proposal" element={<Proposal />} />
-        <Route path="/Victories" element={<Victories />} />
-      </Routes>
-    </BrowserRouter>
+    <ChakraProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Government" element={<Government />} />
+          <Route path="/Community" element={<Community />} />
+          <Route path="/Proposal" element={<Proposal />} />
+          <Route path="/Victories" element={<Victories />} />
+        </Routes>
+      </BrowserRouter>
+    </ChakraProvider>
   );
 }
 

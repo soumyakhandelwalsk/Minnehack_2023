@@ -1,20 +1,19 @@
 import React from 'react'
 import Navbar from "../components/Navbar.js";
+import ProposalCard from '../components/ProposalCard.js';
 
 function Community() {
   return (
     <>
-      <Navbar transparent />
+      <Navbar />
       <main>
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center">
+        <div className="relative pt-16 pb-4 flex content-center items-center justify-center">
         </div>
-        <div className="absolute top-0 w-full h-full bg-center bg-cover"
-          style={{
-            backgroundImage: "url('')"
-          }}>
-          <span id="blackOverlay" className="w-full h-full absolute opacity-75 bg-black"></span>
+        <div className="container mx-auto">
+          <ProposalCard />
+          <ProposalCard />
+          <ProposalCard />
         </div>
-        <div>Community</div>
       </main>
     </>
   )
